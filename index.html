@@ -16,9 +16,9 @@
 		<!-- Header -->
 			<header id="header" class="alt">
 				<div class="inner">
-                    <background img="https://s3.envato.com/files/225693685/Preview_Image_00000.jpg">
-					<h1>六校資研寒訓-密室逃脫</h1>
-					<p>嘉義高中 X 嘉義女中 X 台南二中 x 新竹高中 X 鳳新高中 X 興國高中</p>
+                    <h1><span style="font-weight:bold;">六校資研寒訓-密室逃脫</span></h1>
+                    
+					<h3>嘉義高中 X 嘉義女中 X 台南二中 x 新竹高中 X 鳳新高中 X 興國高中</h3>
 				</div>
 			</header>
 
@@ -28,15 +28,53 @@
 				<!-- Banner -->
 					<section id="intro" class="main">
 						<span class="icon fa-diamond major"></span>
-						<h1>活動資訊</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae<br />
-						malesuada turpis. Nam pellentesque in ac aliquam. Aliquam tempor<br />
-						mi porta egestas maximus lorem ipsum dolor.</p>
-						<ul class="actions">
-							<li><a href="#" class="button big">Learn More</a></li>
-						</ul>
-					</section>
+						<h1><span style="font-weight:bold;"> 密室逃脫簡介</span></h1>
+						<p>首先   &nbsp;&nbsp;恭喜大家來到這一關<br>
+                            在這個關卡中   &nbsp;&nbsp;你們需要找出藏在網頁裡的線索<br>
+                            現在，運用你的所學來破關吧！<br>
+                            希望大家玩得愉快XD
+                        </p>
+                        <button id="myBtn">通關驗證</button>
+                        
+                        <!-- The Modal -->
+                            <div id="myModal" class="modal">
+  
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span class="close">×</span>
+                                    <form name="login">
+                                        小隊編號（輸入格式：第Ｘ小隊）：
+                                            <input type="text" name="username">
+                                        <div class="space"></div>
+                                        通關密碼：
+                                            <input type="password" name="password">
+                                        <div class="space"></div>
+                                        <button id="passBtn">通往下一關</button>
+                                    </form>
+                                </div>
+                            </div>
+                        
+                        <script>
+                            // Get the modal
+                            var modal = document.getElementById('myModal');
 
+                            // Get the button that opens the modal
+                            var btn = document.getElementById("myBtn");
+
+                            // Get the <span> element that closes the modal
+                            var span = document.getElementsByClassName("close")[0];
+
+                            // When the user clicks the button, open the modal 
+                            btn.onclick = function() {
+                                modal.style.display = "block";
+                            }
+
+                            // When the user clicks on <span> (x), close the modal
+                            span.onclick = function() {
+                                modal.style.display = "none";
+                            }
+                        </script>
+					</section>
 				<!-- Items -->
 					<section class="main items">
 						<article class="item">
@@ -73,6 +111,11 @@
 							<header>
 								<a href="#"><img src="images/pic04.jpg" alt="" /></a>
 								<h3>Ipsum sed tempus</h3>
+                                <div class="hide">
+                                    <p>
+                                        
+                                    </p>
+                                </div>
 							</header>
 							<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
 							<ul class="actions">
@@ -83,13 +126,7 @@
 
 				<!-- CTA -->
 					<section id="cta" class="main special">
-						<h2>Etiam veroeros lorem</h2>
-						<p>Phasellus ac augue ac magna auctor tempus proin<br />
-						accumsan lacus a nibh commodo in pellentesque dui<br />
-						in hac habitasse platea dictumst.</p>
-						<ul class="actions">
-							<li><a href="#" class="button big">Get Started</a></li>
-						</ul>
+						<h2></h2>
 					</section>
 
 				<!-- Main -->
@@ -119,6 +156,7 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+            <script src="assets/js/login.js"></script>
 
 	</body>
 </html>

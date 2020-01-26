@@ -150,6 +150,7 @@
 
 	p {
 		margin: 0 0 2em 0;
+        font-size: 1em;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -166,7 +167,8 @@
 		}
 
 	h1 {
-		font-size: 2em;
+		font-size: 2.5em;
+        
 	}
 
 	h2 {
@@ -355,7 +357,7 @@
 		white-space: nowrap;
 		text-transform: uppercase;
 		letter-spacing: 0.325em;
-		font-size: 0.725em;
+		font-size: 1em;
 	}
 
 		input[type="submit"].icon:before,
@@ -809,6 +811,10 @@
 		ul li {
 			padding-left: 0.5em;
 		}
+
+ul p.flag-1{
+    color: #ffffff
+}
 
 		ul.alt {
 			list-style: none;
@@ -1299,6 +1305,7 @@
 		text-align: center;
 		position: relative;
 		cursor: default;
+        margin:0px auto;
 	}
 
 		#header input, #header select, #header textarea {
@@ -1555,3 +1562,50 @@
 				}
 
 		}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.space{
+    color: #000000;
+    padding: 10px;
+}
+
+.hide{
+    color: aqua
+    
+}
