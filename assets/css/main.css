@@ -1081,15 +1081,18 @@ ul p.flag-1{
 			color: rgba(255, 255, 255, 0.75);
 			position: relative;
 			overflow: hidden;
+            position: relative;
 		}
 
 			.item header input, .item header select, .item header textarea {
 				color: #ffffff;
 			}
 
-			.item header a {
-				color: inherit;
-			}
+
+
+            .item header a: last-child:hover{
+                opacity: 0;
+            }
 
 				.item header a:hover {
 					color: #EF6480 !important;
@@ -1130,6 +1133,7 @@ ul p.flag-1{
 				width: 100%;
 				height: 100%;
 				display: block;
+                color: inherit;
 			}
 
 				.item header a:before {
@@ -1234,6 +1238,7 @@ ul p.flag-1{
 				height: 12em;
 				margin: -2em 0 2em -1em;
 				width: calc(100% + 2em);
+                z-index: 1; 
 			}
 
 	}
@@ -1307,6 +1312,37 @@ ul p.flag-1{
 		cursor: default;
         margin:0px auto;
 	}
+
+    #heard-2{
+		background-color: #FFF;
+		color: rgba(255, 255, 255, 0.75);
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		padding: 8em 0 6em 0;
+		background-image: url("../../images/banner.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		text-align: center;
+		position: relative;
+		cursor: default;
+        margin:0px auto;
+        z-index: -1;
+}
 
 		#header input, #header select, #header textarea {
 			color: #ffffff;
@@ -1605,7 +1641,15 @@ ul p.flag-1{
     padding: 10px;
 }
 
+.hide_word{
+    padding: 8px;
+}
+
 .hide{
-    color: aqua
-    
+    background-color: #FFF;
+    margin: auto;
+    position: absolute;
+    z-index: -1;
+    top: 25%;
+    left: 25%;
 }
