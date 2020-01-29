@@ -5,23 +5,23 @@ btn.onclick = function(){
     var team = document.login.username.value;
     var password = document.login.password.value;
     
-    if (team == "第一小隊" && password == "1"){
+    if (team == "第一小隊" && password == "myxfyvedsyx"){
         window.open("第二關/checkpoint-1.html");
         done = 1;
     }
-    if (team == "第二小隊" && password == "2"){
+    if (team == "第二小隊" && password == "tezhkbmaf"){
         window.open("第二關/checkpoint-2.html");
         done = 1;
     }
-    if (team =="第三小隊" && password == "3"){
+    if (team =="第三小隊" && password == "evlirc_evknfib"){
         window.open("第二關/checkpoint-3.html");
         done = 1;
     }
-    if (team == "第四小隊" && password == "4"){
+    if (team == "第四小隊" && password == "vxouxoze_wakak"){
         window.open("第二關/checkpoint-4.html");
         done = 1;
     }
-    if (team == "第五小隊" && password == "5"){
+    if (team == "第五小隊" && password == "wyperwpekj"){
         window.open("第二關/checkpoint-5.html");
         done = 1;
     }

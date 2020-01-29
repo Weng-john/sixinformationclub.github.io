@@ -4,11 +4,11 @@ Btn.onclick = function(){
     var clue = document.connectClue.clue.value;
     var done = 0
     
-    if((username == "第一小隊" && clue == "1") ||
-        (username == "第二小隊" && clue == "2") ||
-        (username =="第三小隊" && clue == "3") ||
-        (username == "第四小隊" && clue == "4") ||
-        (username == "第五小隊" && clue == "5")){
+    if((username == "第一小隊" && clue == "convolution") ||
+        (username == "第二小隊" && clue == "algorithm") ||
+        (username =="第三小隊" && clue == "neural_network") ||
+        (username == "第四小隊" && clue == "priority_queue") ||
+        (username == "第五小隊" && clue == "activation")){
             window.open("https://colab.research.google.com/drive/1v_J-dffR5GFQWwmpYWh3C5pL3J-7wPYN");
             done = 1;
     }
